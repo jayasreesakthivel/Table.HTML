@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Innovative Student Table</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            font-family: Arial;
+        }
+
+        .card {
+            margin: 50px auto;
+            width: 85%;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            background: rgba(255,255,255,0.1);
+            color: white;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+        }
+
+        .table tbody tr:hover {
+            transform: scale(1.02);
+            transition: 0.3s;
+            background: rgba(255,255,255,0.2);
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+        }
+
+        .avatar1 { background: #ff6b6b; }
+        .avatar2 { background: #4ecdc4; }
+        .avatar3 { background: #f7b731; }
+    </style>
+</head>
+
+<body>
+
+<div class="card p-4">
+    <h3 class="text-center mb-4">✨ Student Performance Dashboard</h3>
+
+    <table class="table text-center align-middle table-borderless">
+        <thead class="table-dark">
+            <tr>
+                <th>Profile</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Attendance</th>
+                <th>Performance</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><div class="avatar avatar1">J</div></td>
+                <td>Jayasree</td>
+                <td>BCA</td>
+                <td><i class="bi bi-calendar-check"></i> 92%</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 85%">85%</div>
+                    </div>
+                </td>
+                <td><span class="badge bg-success">Excellent</span></td>
+            </tr>
+
+            <tr>
+                <td><div class="avatar avatar2">D</div></td>
+                <td>Dhanusri</td>
+                <td>BCA</td>
+                <td><i class="bi bi-calendar-check"></i> 78%</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 65%">65%</div>
+                    </div>
+                </td>
+                <td><span class="badge bg-warning text-dark">Good</span></td>
+            </tr>
+
+            <tr>
+                <td><div class="avatar avatar3">S</div></td>
+                <td>Saibala</td>
+                <td>BCA</td>
+                <td><i class="bi bi-calendar-check"></i> 60%</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 40%">40%</div>
+                    </div>
+                </td>
+                <td><span class="badge bg-danger">Needs Improvement</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
